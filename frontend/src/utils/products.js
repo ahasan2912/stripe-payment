@@ -1,0 +1,22 @@
+
+export const products = [
+  { id: 1, name: 'Laptop', price: 999, image: 'https://images.unsplash.com/photo-1616162122504-60909390c84b' },
+  { id: 2, name: 'Smartphone', price: 699, image: 'https://images.unsplash.com/photo-1513788042186-94d51ba78899' },
+  { id: 3, name: 'Headphones', price: 199, image: 'https://images.unsplash.com/photo-1600434390500-e2c625e0c1ca' },
+  { id: 4, name: 'Coffee Maker', price: 120, image: 'https://images.unsplash.com/photo-1574143131638-7c1f313a8f39' },
+  { id: 5, name: 'Smartwatch', price: 249, image: 'https://images.unsplash.com/photo-1585821781603-e54b9e2a9ef8' },
+  { id: 6, name: 'Camera', price: 450, image: 'https://images.unsplash.com/photo-1585072240166-bc44e8fe430b' },
+  { id: 7, name: 'Bluetooth Speaker', price: 99, image: 'https://images.unsplash.com/photo-1573497166233-2c160f9e590b' },
+  { id: 8, name: 'Backpack', price: 80, image: 'https://images.unsplash.com/photo-1602926826742-b48f82d0f17f' },
+  { id: 9, name: 'Wireless Mouse', price: 35, image: 'https://images.unsplash.com/photo-1593720227890-e85bc4105043' },
+  { id: 10, name: 'Gaming Chair', price: 250, image: 'https://images.unsplash.com/photo-1600453399670-77b98b402ada' },
+  { id: 11, name: 'Tablet', price: 329, image: 'https://images.unsplash.com/photo-1611199381514-efc3a15509f4' },
+  { id: 12, name: 'Fitness Tracker', price: 90, image: 'https://images.unsplash.com/photo-1586902872730-e2f7e37b3491' },
+  { id: 13, name: 'Portable SSD', price: 150, image: 'https://images.unsplash.com/photo-1577170471460-c1d25e7cae28' },
+  { id: 14, name: 'Electric Toothbrush', price: 60, image: 'https://images.unsplash.com/photo-1600520291372-2d45f8ef0c38' },
+  { id: 15, name: 'Air Fryer', price: 120, image: 'https://images.unsplash.com/photo-1615245184960-bb7f3c2cd436' },
+  { id: 16, name: 'Electric Kettle', price: 40, image: 'https://images.unsplash.com/photo-1561432727-4be63dbde346' },
+  { id: 17, name: 'Smart Thermostat', price: 150, image: 'https://images.unsplash.com/photo-1604130704725-c6b74b6317ba' },
+  { id: 18, name: 'Desk Lamp', price: 50, image: 'https://images.unsplash.com/photo-1605777462905-cad7a4fc69b4' },
+  { id: 19, name: 'Electric Grill', price: 80, image: 'https://images.unsplash.com/photo-1590559992448-cb3b9a67ec7c' },
+];
