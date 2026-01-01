@@ -57,7 +57,7 @@ app.post('/create-checkout-session', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
-
+// Get payment Payment and others value
 app.get("/session/:id", async (req, res) => {
     try {
         const session = await stripe.checkout.sessions.retrieve(req.params.id);

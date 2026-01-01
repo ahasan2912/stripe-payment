@@ -16,7 +16,7 @@ const Success = () => {
         }
     }, []);
     return (
-        <div>
+        <div className='space-y-2'>
             <h1>Payment Successful ✅</h1>
             {paymentInfo && (
                 <>
