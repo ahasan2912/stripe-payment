@@ -38,17 +38,40 @@ app.post('/create-checkout-session', async (req, res) => {
                 },
             ],
             mode: 'payment',
-            success_url: `${process.env.URL}/success`,
+            // success_url: `${process.env.URL}/success`,
+            success_url: `${process.env.URL}/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.URL}/cancel`,
             customer_email: 'user@example.com',
         });
 
+        console.log('From Post Api', session);
+
         // Send the checkout session URL to the client
-        res.json({ url: session.url });
+        res.json({
+            url: session.url,
+            sessionId: session.id
+        });
 
     } catch (error) {
         console.error('Error creating checkout session:', error);
         res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+app.get("/session/:id", async (req, res) => {
+    try {
+        const session = await stripe.checkout.sessions.retrieve(req.params.id);
+
+        res.json({
+            payment_intent: session.payment_intent,
+            amount_total: session.amount_total,
+            currency: session.currency,
+            payment_status: session.payment_status,
+            customer_email: session.customer_details?.email,
+        });
+        console.log('From GET Api', session);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
     }
 });
 
